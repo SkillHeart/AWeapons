@@ -1,0 +1,35 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "stalcraft:wpn_ak12_held.player",
+            "item": {
+                "stalcraft:wpn_ak12_held": "query.owner_identifier == 'minecraft:player'"
+            },
+            "materials": {
+                "default": "armor",
+                "enchanted": "armor_enchanted"
+            },
+            "textures": {
+                "default": "textures/weapons/wpn_ak12",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            "geometry": {
+                "default": "geometry.player.wpn_ak12"
+            },
+            "scripts": {
+                "parent_setup": "variable.boot_layer_visible = 0.0;",
+                "animate": [
+                    "offset"
+                ]
+            },
+            "animations": {
+                "offset": "animation.armor.boots.offset",
+                "weapon": "animation.player.hand.wpn_ak12"
+            },
+            "render_controllers": [
+                "controller.render.player.wpn_ak12"
+            ]
+        }
+    }
+}

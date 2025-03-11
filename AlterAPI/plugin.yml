@@ -1,0 +1,4 @@
+name: AlterAPI
+main: BLIKA\API
+version: "1.0"
+api: ["4.0.0"]
